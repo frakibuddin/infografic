@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+body {
+  background: rgb(177, 235, 235);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding: 7px;
+  margin-bottom: 50px;
+  background: #fff;
+}
+header .logo {
+  width: 140px;
+}
+.header-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.ansQus-inner {
+  margin: 0 60px;
+  background: #f7f7f7;
+}
+.ansQus {
+  padding-bottom: 65px;
+}
+
+.question {
+  position: relative;
+}
+.question h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding: 12px 0;
+  text-transform: capitalize;
+  background: var(--color);
+  border-radius: 50px;
+  box-shadow: 0px 3px 6px 0px #00000085;
+}
+.question .line {
+  width: 100%;
+  height: 10px;
+  background: var(--color);
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 6px 0px #00000085;
+}
+.answer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 20px;
+  gap: 15px;
+}
+.ans-icon {
+  flex-basis: 20%;
+}
+.ans-test {
+  flex-basis: 75%;
+}
+.ans-icon img {
+  width: 120px;
+}
+.ans-test p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.footer-top {
+  background: #1819282f;
+  padding: 30px 40px;
+  font-size: 20px;
+  color: #413f3f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  border-top: 2px solid #a9a9a952;
+  border-bottom: 2px solid #a9a9a952;
+}
+.footer-top img {
+  width: 70px;
+}
+footer {
+  text-align: left;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+.footer-logo {
+  width: 100px;
+}
+footer p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media (max-width: 850px) {
+  .ans-icon img {
+    width: 110px;
+  }
+}
+@media (max-width: 700px) {
+  .ansQus-inner {
+    margin: 0 0;
+  }
+}
+@media (max-width: 580px) {
+  .ans-test {
+    flex-basis: 95%;
+  }
+  .question h2 {
+    width: 85%;
+  }
+  .answer {
+    margin: 0 10px;
+  }
+  .ans-test p,
+  .footer-top {
+    font-size: 18px;
+  }
+  .question h2 {
+    font-size: 22px;
+  }
+  .footer-top,
+  footer {
+    padding: 30px 10px;
+  }
+}
